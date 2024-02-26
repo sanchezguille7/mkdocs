@@ -3,6 +3,25 @@ site_name: IAW
 nav:
     - Principal: index.md
     - Acerca de: about.md
-    - Miler la chupa: nuevo.md
+    - docker-web: nuevo.md
 
 theme: material
+
+theme:
+  palette:
+    scheme: default
+
+theme:
+  palette:
+    primary: indigo
+
+theme:
+  font:
+    text: Roboto
+
+theme:
+  language: es
+
+theme:
+  logo: assets/logo.png
+
