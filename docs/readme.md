@@ -8,7 +8,7 @@ Este proyecto consiste en crear un contenedor **Docker** que ejecuta una aplicac
 
 **Dockerfile**: Este archivo define cómo se construirá la imagen del contenedor **Docker**. Utiliza una imagen base de **Ubuntu 23.04**, instala **Git** y **Apache2**, clona el repositorio de la aplicación **2048** desde **GitHub**, mueve los archivos al directorio de documentos raíz de **Apache** y expone el puerto **80** para que la aplicación sea accesible desde el exterior. Además, define el comando para iniciar **Apache2** en primer plano.
 
-  ![2048](images/docker.gif)
+  ![2048](/images/docker.gif)
 
 **docker-compose.yml:** Este archivo describe los servicios para el entorno **Docker** utilizando **Docker Compose**. Define el servicio de **nginx** que construye la imagen a partir del directorio *./app* mapea el puerto **80** del contenedor al puerto **80** del host, y establece que el servicio se reinicie automáticamente en caso de fallo.
 
@@ -23,4 +23,4 @@ Este proyecto consiste en crear un contenedor **Docker** que ejecuta una aplicac
     
 5. Una vez que los contenedores estén en ejecución, abre un navegador web y visita http://localhost para jugar al juego **2048**.
 
-![2048](images/2048.gif)
+![2048](/images/2048.gif)

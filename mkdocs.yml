@@ -15,9 +15,9 @@ theme:
     primary: green
 
   font:
-    text: Teko
+    text: Rajdhani
 
   language: es
 
-  logo: images/logo.png
+  logo: /images/logo.png
 
