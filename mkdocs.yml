@@ -4,6 +4,7 @@ nav:
     - Principal: index.md
     - Acerca de: about.md
     - docker-web: nuevo.md
+    - docker-web2: readme.md
 
 theme: 
 
