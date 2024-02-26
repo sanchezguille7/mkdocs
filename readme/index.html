@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../about/">
+        <link rel="prev" href="../nuevo/">
       
-      
-        <link rel="next" href="../readme/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>docker-web - IAW</title>
+        <title>docker-web2 - IAW</title>
       
     
     
@@ -70,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dockerizar-una-web-estatica-y-publicarla-en-docker-hub" class="md-skip">
+        <a href="#docker-web-2" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -105,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              docker-web
+              docker-web2
             
           </span>
         </div>
@@ -234,6 +232,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../nuevo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    docker-web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -250,7 +268,7 @@
           
   
   <span class="md-ellipsis">
-    docker-web
+    docker-web2
   </span>
   
 
@@ -261,7 +279,7 @@
         
   
   <span class="md-ellipsis">
-    docker-web
+    docker-web2
   </span>
   
 
@@ -283,38 +301,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requisitos-del-archivo-dockerfile" class="md-nav__link">
+  <a href="#archivos" class="md-nav__link">
     <span class="md-ellipsis">
-      Requisitos del archivo Dockerfile
+      Archivos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Archivos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instrucciones-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instrucciones de Uso:
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#creacion-de-la-imagen-docker-a-partir-del-archivo-dockerfile" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creación de la imagen Docker a partir del archivo Dockerfile
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#publicar-la-imagen-en-docker-hub" class="md-nav__link">
-    <span class="md-ellipsis">
-      Publicar la imagen en Docker Hub
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comprobacion-de-que-funciona" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprobacion de que funciona
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -322,26 +328,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../readme/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    docker-web2
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -373,38 +359,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requisitos-del-archivo-dockerfile" class="md-nav__link">
+  <a href="#archivos" class="md-nav__link">
     <span class="md-ellipsis">
-      Requisitos del archivo Dockerfile
+      Archivos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Archivos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instrucciones-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instrucciones de Uso:
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#creacion-de-la-imagen-docker-a-partir-del-archivo-dockerfile" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creación de la imagen Docker a partir del archivo Dockerfile
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#publicar-la-imagen-en-docker-hub" class="md-nav__link">
-    <span class="md-ellipsis">
-      Publicar la imagen en Docker Hub
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comprobacion-de-que-funciona" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprobacion de que funciona
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -423,52 +397,27 @@
                   
 
 
-<h1 id="dockerizar-una-web-estatica-y-publicarla-en-docker-hub">«Dockerizar» una web estática y publicarla en Docker Hub</h1>
-<p>En esta práctica, he tenido que crear un archivo <strong>Dockerfile</strong> para generar una imagen <strong>Docker</strong> que incluya una aplicación web estática. Luego, la publico en <strong>Docker Hub</strong> y realizo la implementación del sitio web en <strong>Amazon Web Services (AWS)</strong> utilizando contenedores <strong>Docker</strong> y <strong>Docker Compose</strong>.</p>
-<h2 id="requisitos-del-archivo-dockerfile">Requisitos del archivo Dockerfile</h2>
-<p>Debo crear un archivo <strong>Dockerfile</strong> que cumpla con los siguientes requisitos:</p>
+<h1 id="docker-web-2">Docker Web 2</h1>
+<p>Es la misma dinámica que <a href="https://github.com/sanchezguille7/docker-web">Docker-web</a> pero con <strong>Ubuntu 23.04</strong>
+Este proyecto consiste en crear un contenedor <strong>Docker</strong> que ejecuta una aplicación del juego <strong>2048</strong> en un servidor <strong>Apache</strong>. Utiliza un archivo Dockerfile para construir la imagen del contenedor y un archivo docker-compose.yml para definir y configurar el entorno de ejecución.</p>
+<h2 id="archivos">Archivos:</h2>
+<p><strong>Dockerfile</strong>: Este archivo define cómo se construirá la imagen del contenedor <strong>Docker</strong>. Utiliza una imagen base de <strong>Ubuntu 23.04</strong>, instala <strong>Git</strong> y <strong>Apache2</strong>, clona el repositorio de la aplicación <strong>2048</strong> desde <strong>GitHub</strong>, mueve los archivos al directorio de documentos raíz de <strong>Apache</strong> y expone el puerto <strong>80</strong> para que la aplicación sea accesible desde el exterior. Además, define el comando para iniciar <strong>Apache2</strong> en primer plano.</p>
+<p><img alt="2048" src="/images/docker.gif" /></p>
+<p><strong>docker-compose.yml:</strong> Este archivo describe los servicios para el entorno <strong>Docker</strong> utilizando <strong>Docker Compose</strong>. Define el servicio de <strong>nginx</strong> que construye la imagen a partir del directorio <em>./app</em> mapea el puerto <strong>80</strong> del contenedor al puerto <strong>80</strong> del host, y establece que el servicio se reinicie automáticamente en caso de fallo.</p>
+<h3 id="instrucciones-de-uso">Instrucciones de Uso:</h3>
 <ol>
-<li>Utilizar la última versión de <strong>nginx</strong> como imagen base.</li>
-<li>Instalar el software necesario para clonar el repositorio de <strong>GitHub</strong> que contiene la aplicación web estática.</li>
-<li>Clonar el repositorio de <strong>GitHub</strong> que contiene la aplicación web estática en el directorio <code>/usr/share/nginx/html/</code>, que es el directorio por defecto utilizado por <strong>Nginx</strong> para servir contenido.</li>
-<li>Utilizar el puerto <strong>80</strong> para ejecutar el servicio de <strong>Nginx</strong> dentro de la imagen.</li>
-<li>Ejecutar el comando <code>nginx -g 'daemon off;'</code> al iniciar el contenedor.</li>
+<li>Clona este repositorio en tu máquina local.</li>
+<li>Asegúrate de tener <strong>Docker</strong> y <strong>Docker Compose</strong> instalados en tu sistema.</li>
+<li>En la terminal, navega hasta el directorio del proyecto clonado.</li>
+<li>
+<p>Ejecuta el siguiente comando para construir y ejecutar los contenedores:
+    docker-compose up --build</p>
+</li>
+<li>
+<p>Una vez que los contenedores estén en ejecución, abre un navegador web y visita http://localhost para jugar al juego <strong>2048</strong>.</p>
+</li>
 </ol>
-<h2 id="creacion-de-la-imagen-docker-a-partir-del-archivo-dockerfile">Creación de la imagen Docker a partir del archivo Dockerfile</h2>
-<p>Para crear la imagen de <strong>Docker</strong> a partir del archivo <strong>Dockerfile</strong> deberá ejecutar el siguiente comando.</p>
-<pre><code>docker build -t nginx-2048-gsm .
-</code></pre>
-<p><img alt="Comando" src="/images/1.png" /></p>
-<p>Comprobacion:</p>
-<p><img alt="Comando" src="/images/3.PNG" /></p>
-<p>Para publicar la imagen en <strong>Docker Hub</strong> es necesario que en el nombre de la imagen aparezca nuestro nombre de usuario de <strong>Docker Hub</strong>. En mi caso: <em>sanchezguille7/nginx-2048-gsm</em>.
-Le añadimos etiquetas o tags:</p>
-<pre><code>docker tag nginx-2048-gsm sanchezguille7/nginx-2048-gsm:1.0
-docker tag nginx-2048-gsm sanchezguille7/nginx-2048-gsm:latest
-</code></pre>
-<p><img alt="Comando" src="/images/4.PNG" /></p>
-<h2 id="publicar-la-imagen-en-docker-hub">Publicar la imagen en Docker Hub</h2>
-<p>Una vez que le hemos asignado un nombre correcto a la imagen y le hemos añadido las etiquetas, podemos publicarla en <strong>Docker Hub</strong>.</p>
-<p>Lo primero que tenemos que hacer es iniciar sesión en <strong>Docker Hub</strong> desde nuestra instancia de <strong>AWS</strong> con el comando donde pondremos nuestros credenciales de <strong>Docker Hub</strong>:</p>
-<pre><code>docker login
-</code></pre>
-<p><img alt="Comando" src="/images/5.PNG" /></p>
-<p>Para publicar la imagen con las dos etiquetas que hemos creado:</p>
-<pre><code>docker push sanchezguille7/nginx-2048-gsm:1.0
-
-docker push sanchezguille7/nginx-2048-gsm:latest
-</code></pre>
-<p><img alt="Comando" src="/images/6.PNG" /></p>
-<p>Se puede comprobar la creación en mi perfil de <strong>Docker Hub</strong>(si pinchas en la imagen te lleva directamente):</p>
-<p><a href="https://hub.docker.com/repository/docker/sanchezguille7/nginx-2048-gsm/general"><img alt="Comando" src="/images/7.PNG" /></a>
-( https://hub.docker.com/repository/docker/sanchezguille7/nginx-2048-gsm/general )</p>
-<h2 id="comprobacion-de-que-funciona">Comprobacion de que funciona</h2>
-<p>IP elastica de mi máquina de AWS:</p>
-<p><img alt="Pagina web" src="/images/9.PNG" /></p>
-<p>Pagina web estática:</p>
-<p><img alt="Pagina web" src="/images/8.PNG" /></p>
-<p>Comando para lanzarlo:</p>
-<p><img alt="Comando para lanzarlo" src="/images/10.PNG" /></p>
+<p><img alt="2048" src="/images/2048.gif" /></p>
 
 
 
