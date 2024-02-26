@@ -5,23 +5,18 @@ nav:
     - Acerca de: about.md
     - docker-web: nuevo.md
 
-theme: material
+theme: 
 
-theme:
+  name: material
+
   palette:
-    scheme: default
+    scheme: slate
+    primary: green
 
-theme:
-  palette:
-    primary: indigo
-
-theme:
   font:
-    text: Roboto
+    text: Teko
 
-theme:
   language: es
 
-theme:
-  logo: assets/logo.png
+  logo: images/logo.png
 
