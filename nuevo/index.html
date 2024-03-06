@@ -437,49 +437,38 @@
 <h2 id="creacion-de-la-imagen-docker-a-partir-del-archivo-dockerfile">Creación de la imagen Docker a partir del archivo Dockerfile</h2>
 <p>Para crear la imagen de <strong>Docker</strong> a partir del archivo <strong>Dockerfile</strong> deberá ejecutar el siguiente comando.</p>
 <pre><code>docker build -t nginx-2048-gsm .
-
-![Comando](/images/1.png)
 </code></pre>
+<p><img alt="Comando" src="/images/1.png" /></p>
 <p>Comprobacion:</p>
-<pre><code>![Comando](/images/3.PNG)
-</code></pre>
+<p><img alt="Comando" src="/images/3.PNG" /></p>
 <p>Para publicar la imagen en <strong>Docker Hub</strong> es necesario que en el nombre de la imagen aparezca nuestro nombre de usuario de <strong>Docker Hub</strong>. En mi caso: <em>sanchezguille7/nginx-2048-gsm</em>.
 Le añadimos etiquetas o tags:</p>
 <pre><code>docker tag nginx-2048-gsm sanchezguille7/nginx-2048-gsm:1.0
 docker tag nginx-2048-gsm sanchezguille7/nginx-2048-gsm:latest
-
-
-![Comando](/images/4.PNG)
 </code></pre>
+<p><img alt="Comando" src="/images/4.PNG" /></p>
 <h2 id="publicar-la-imagen-en-docker-hub">Publicar la imagen en Docker Hub</h2>
 <p>Una vez que le hemos asignado un nombre correcto a la imagen y le hemos añadido las etiquetas, podemos publicarla en <strong>Docker Hub</strong>.</p>
 <p>Lo primero que tenemos que hacer es iniciar sesión en <strong>Docker Hub</strong> desde nuestra instancia de <strong>AWS</strong> con el comando donde pondremos nuestros credenciales de <strong>Docker Hub</strong>:</p>
 <pre><code>docker login
-
-![Comando](/images/5.PNG)
 </code></pre>
+<p><img alt="Comando" src="/images/5.PNG" /></p>
 <p>Para publicar la imagen con las dos etiquetas que hemos creado:</p>
 <pre><code>docker push sanchezguille7/nginx-2048-gsm:1.0
 
 docker push sanchezguille7/nginx-2048-gsm:latest
-
-
-![Comando](/images/6.PNG)
 </code></pre>
+<p><img alt="Comando" src="/images/6.PNG" /></p>
 <p>Se puede comprobar la creación en mi perfil de <strong>Docker Hub</strong>(si pinchas en la imagen te lleva directamente):</p>
-<pre><code>[![Comando](/images/7.PNG)](https://hub.docker.com/repository/docker/sanchezguille7/nginx-2048-gsm/general)
-</code></pre>
-<p>( https://hub.docker.com/repository/docker/sanchezguille7/nginx-2048-gsm/general )</p>
+<p><a href="https://hub.docker.com/repository/docker/sanchezguille7/nginx-2048-gsm/general"><img alt="Comando" src="/images/7.PNG" /></a>
+( https://hub.docker.com/repository/docker/sanchezguille7/nginx-2048-gsm/general )</p>
 <h2 id="comprobacion-de-que-funciona">Comprobacion de que funciona</h2>
 <p>IP elastica de mi máquina de AWS:</p>
-<pre><code>![Pagina web](/images/9.PNG)
-</code></pre>
+<p><img alt="Pagina web" src="../images/9.PNG" /></p>
 <p>Pagina web estática:</p>
-<pre><code>![Pagina web](/images/8.PNG)
-</code></pre>
+<p><img alt="Pagina web" src="/images/8.PNG" /></p>
 <p>Comando para lanzarlo:</p>
-<pre><code>![Comando para lanzarlo](/images/10.PNG)
-</code></pre>
+<p><img alt="Comando para lanzarlo" src="/images/10.PNG" /></p>
 
 
 
